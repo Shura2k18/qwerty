@@ -1,1 +1,45 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 300px 1fr;
+      grid-template-columns: 100px 300px 1fr;
+  -ms-grid-rows: 80px calc(100vh - 80px);
+      grid-template-rows: 80px calc(100vh - 80px);
+      grid-template-areas: "servers chats header" "servers chats main";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: header;
+  background: #000;
+}
+
+.servers {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: servers;
+  background: #f00;
+}
+
+.chats {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: chats;
+  background: #0f0;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: main;
+  background: #00f;
+}
+/*# sourceMappingURL=style.css.map */

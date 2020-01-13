@@ -1,2 +1,32 @@
 @import "fonts";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.app {
+    display: grid;
+    grid-template-columns: 100px 300px 1fr;
+    grid-template-rows: 80px calc(100vh - 80px);
+    grid-template-areas: 
+    "servers chats header"
+    "servers chats main";
+}
+header {
+    grid-area: header;
+    background: #000;
+}
+.servers {
+    grid-area: servers;
+    background: #f00;
+}
+.chats {
+    grid-area: chats;
+    background: #0f0;
+}
+main {
+    grid-area: main;
+    background: #00f;
+}
+
 @import "media";
