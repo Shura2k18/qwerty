@@ -6,8 +6,8 @@ body {
 }
 .app {
     display: grid;
-    grid-template-columns: 100px 300px 1fr;
-    grid-template-rows: 80px calc(100vh - 80px);
+    grid-template-columns: 75px 240px 1fr;
+    grid-template-rows: 50px calc(100vh - 50px);
     grid-template-areas: 
     "servers chats header"
     "servers chats main";
